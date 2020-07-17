@@ -1,0 +1,137 @@
+.nav{
+    display: flex;
+    
+    font-size: 1.5vw;
+    .menu{
+        width: 33.33333%;
+        text-align: left;
+        .menuIcon{
+            width: 1.5vw;
+            height: 1.5vw;
+            border: 0px solid black;
+            .menuBurger{
+                margin: auto;
+                width: 1vw;
+                height: 0.2vw;
+                border-radius: 5px;
+                background-color: black;
+                transition: all .5s ease-in-out;
+            }
+            .menuBurger::before,.menuBurger::after{
+                content: '';
+                position: absolute;
+                width: 1vw;
+                height: 0.2vw;
+                background-color: black;
+                border-radius: 5px;
+                transition: all .5s ease-in-out;
+            }
+        }
+    }
+    .logo{
+        width: 33.33333%;
+        img{
+            width: 18%;
+            object-fit: cover;
+        }
+    }
+    .icons{
+        width: 33.33333%;
+        color: black;
+        text-align: right;
+        .fas{
+            margin-right: 1vw;
+            font-size: 1.2vw;
+        }
+    }
+}
+
+.openNav{
+    margin-top: 1vh;
+    text-align: center;
+    a{
+        color: black;
+         margin: 1vw;
+    }
+}
+
+
+@media (min-width:300px) and (max-width:500px){
+    .nav{.icons{.fas,.far{font-size: 4.5vw; margin-right: 3.5vw;} .fa-user{display: none;} }}
+    .nav{.icons{padding: 1.5vh 0.5vw 0vh 0vw; .far{font-size: 5vw;padding-top: 1vh;}}}
+
+    .nav .logo img{width: 95%;margin-left: 0.9vw;margin-top: 1vh;}
+    .nav .menu{padding: 2.5vh 0vw 1vh 3vw;}
+
+    .nav .menu .menuIcon .menuBurger {
+        margin: auto;
+        width: 4.5vw;
+        height: 0.5vw;
+        border-radius: 2px;
+        background-color: black;
+        transition: all .5s ease-in-out;
+    }
+    .nav .menu .menuIcon .menuBurger::before {
+        transform: translateY(1.35vw);
+    }
+
+    .nav .menu .menuIcon .menuBurger::after {
+        transform: translateY(2.7vw);
+    }
+
+    .nav .menu .menuIcon .menuBurger::before, .nav .menu .menuIcon .menuBurger::after {
+        content: '';
+        position: absolute;
+        width: 4.5vw;
+        height: 0.5vw;
+        background-color: black;
+        border-radius: 5px;
+        transition: all .5s ease-in-out;
+    }
+
+    nav .menu .menuIcon .menuBurger::before, .nav .menu .menuIcon .menuBurger::after {
+        content: '';
+        position: absolute;
+        width: 4.5vw;
+        height: 0.5vw;
+        background-color: black;
+        border-radius: 2px;
+        transition: all .5s ease-in-out;
+    }
+
+
+    .openNav{
+        height: 100vh;
+        position: relative;
+        width: 75vw;
+        padding: 0;
+        margin-top: -9vh;
+        z-index: 1;
+        background-color: white;
+        padding-top: 60px;
+        -webkit-animation: moveNav 0.5s forwards;
+    
+    }
+}
+
+@keyframes moveNav{
+    from{
+        opacity: 0%;
+        width: 0vw;
+    }
+    to{
+        opacity: 100%;
+        width: 75vw;
+    }
+}
+
+@keyframes outNav{
+    from{
+        opacity: 100%;
+        width: 75vw;
+    }
+    to{
+        opacity: 0%;
+        width: 0vw;
+    }
+}
