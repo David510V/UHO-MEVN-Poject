@@ -7,6 +7,11 @@ The project had several goals:
 * Combine between the two and create a Full-Stack web application.
 * Get a better understanding of the ecommerce thinking line.
 
+###### Created as a store so that a client can buy items and also an Admin panel which lets 
+###### the Admin to deside what product/categories there will be in the store and keep track on orders and users.
+
+
+
 #### What is in our stack:
 ##### On the Frontend we have:
 * HTML/CSS.
@@ -23,3 +28,7 @@ The project had several goals:
 * Express.
 * Mongoose.
 * Unit Testing: Jest.
+
+[UHO-Store](https://uho-store.netlify.app/) | [UHO-Admin](https://uho-admin.netlify.app/)
+
+Admin Email: rt562@walla.com , Admin Password: gogo9090
