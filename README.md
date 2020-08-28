@@ -1,4 +1,4 @@
-# UHO-MEVN-Poject
+# UHO- MEVN Poject
 
 #### A Mongo-Express-Vue-Node project that is based on a Shopify store called UHO.
 
