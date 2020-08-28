@@ -1,0 +1,160 @@
+@import './var.scss';
+
+.footer{
+    position: relative;
+    top:0vh;
+    padding: 3vh 3.85vw 0vh 3.85vw;
+
+    .navFoot{
+        text-align: left;
+        display: flex;
+        .links{
+            width: 50%;
+            p{
+                font-size: 0.7vw;
+                letter-spacing: 0.4vw;
+                margin-bottom: 1.3vh;
+            }
+            a{
+                font-size: 0.95vw;
+                margin: 1.2vh 0vw;
+                width: 100%;
+                font-weight: 400;
+                display: inline-block;
+                color: black;
+            }
+        }
+        .icons{
+            width: 50%;
+            padding-top: 2vh;
+            padding-left: 1.4vw;
+            font-size: 1.55vw;
+            .fab{
+                margin-right: 1.2vw;
+            }
+            .fa-pinterest{
+                margin-right: 1.05vw;
+            }
+            .fa-instagram{
+                position: relative;
+                top: 0.1vh;
+                font-size: 1.8vw;
+            }
+            padding-bottom: 0vh;
+        }
+
+
+        padding-bottom: 5.72vh;
+        padding-top: 5.72vh;
+        border-bottom:0.5px solid $color1 ;
+        border-top:0.5px solid $color1 ;
+    }
+    .copy{
+        padding-top: 5.72vh;
+        padding-bottom: 5vh;
+        font-size: 0.85vw;
+        font-weight: 300;
+        color: black;
+        text-align: left;
+        .up{
+            margin-bottom: 1vh;
+            .underUp{
+                display: inline;
+                color: grey;
+            }
+            .fa-copyright{
+                position: relative;
+                margin-top: 0vh;
+                top: -0.2vh;
+            }
+        }
+        .down{
+            padding-top: 0vh;
+            color: black;
+            
+        }
+    }
+}
+
+@media (min-width:300px) and (max-width:500px){
+    .footer {
+        position: relative;
+        top: 0vh;
+        padding: 10vh 5vw 1vh 5vw;
+
+        .navFoot{
+            display: block;
+            width: 100%;
+            text-align: center;
+            
+            .links{
+                width: 100%;
+                a{
+                    font-size: 3.6vw;
+                    margin: 3vh 0vw;
+                    font-weight: 400;
+                    display: block;
+                    color: black;
+                }
+                p{
+                    margin: 4.5vh 0vw 3vh 1.5vw;
+                    font-size: 3vw;
+                    letter-spacing: 1.5vw;
+                }
+                padding-bottom: 5vh;
+                border-bottom: 0.5px solid $color1;
+            }
+            
+            .icons{
+                display: flex;
+                padding: 8vh 31vw;
+                font-size: 6.5vw;
+                width: 100%;
+                .fab{
+                    margin-right: 8vw;
+                }
+                .fa-pinterest{
+                    margin-right: 6.5vw;
+                }
+                .fa-instagram{
+                    font-size: 6.5vw;
+                }
+                padding-bottom: 0vh;
+                
+            }
+            
+            padding-bottom: 8vh;
+            border-top:0.5px solid $color1 ;
+            border-bottom:0.5px solid $color1 ;
+        }
+
+        
+        
+        .copy{
+            padding-top: 8vh;
+            padding-bottom: 17vh;
+            font-size: 3.8vw;
+            font-weight: 300;
+            color: black;
+            text-align: center;
+            .up{
+                margin-bottom: 1vh;
+                .underUp{
+                    display: inline;
+                    color: grey;
+                }
+                .fa-copyright{
+                    font-size: 3vw;
+                    position: relative;
+                    margin-top: 0vh;
+                    top: -0.2vh;
+                }
+            }
+            .down{
+                padding-top: 0vh;
+                color: black;
+                font-size: 3.5vw;
+            }
+        }
+    }
+}

@@ -1,0 +1,324 @@
+.header{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+
+.nav{
+    display: flex;
+    padding: 3vh 3.85vw 1vh 3.85vw;
+    font-size: 1.5vw;
+    .menu{
+        width: 33.33333%;
+        text-align: left;
+        .menuIcon{
+            cursor: pointer;
+            width: 1.5vw;
+            height: 1.5vw;
+            margin-top: 0.8vh;
+            border: 0px solid black;
+            .menuBurger{
+                margin: auto;
+                width: 1.05vw;
+                height: 0.06vw;
+                border-radius: 3px;
+                background-color: black;
+                transition: all .5s ease-in-out;
+            }
+            .menuBurger::before{
+                content: '';
+                position: absolute;
+                width: 0.8vw;
+                height: 0.06vw;
+                transform: translateY(4.6px);
+                background-color: black;
+                border-radius: 5px;
+                transition: all .5s ease-in-out;
+            }
+            .menuBurger::after{
+                content: '';
+                position: absolute;
+                width: 0.6vw;
+                height: 0.06vw;
+                transform: translateY(9.6px);
+                background-color: black;
+                border-radius: 5px;
+                transition: all .5s ease-in-out;
+            }
+        }
+
+        .menuIcon.open {
+            .menuBurger{
+            transform: rotateZ(45deg) translateY(6px) translateX(8px);
+            }
+            .menuBurger::before{
+                width: 0.8vw; height: 0.06vw; transform: translateY(-20px)rotateZ(90deg) translateX(12px);
+            }
+            .menuBurger::after{
+                transform: translateY(2px) translateX(1.5px) rotate(90deg);
+            }
+            
+        }
+        .userMobile{
+            display: block;
+            position: relative;
+            left: 11%;
+            top: -50%;
+            font-style: normal;
+            font-size: 1.2vw;
+        }
+    }
+    .logo{
+        width: 33.33333%;
+        font-size: 1.15vw;
+        padding-right: 0.5vw;
+        text-align: center;
+        .router{
+            color:black!important;
+            width: 50%;
+        }
+        p{
+            display: inline;
+        }
+        img{
+            width: 18%;
+            object-fit: cover;
+        }
+    }
+    .icons{
+        width: 33.33333%;
+        position: relative;
+        color: black;
+        top: -0.5vh;
+        left: -0.5vh;
+        text-align: right;
+        .fas{
+            margin-right: 1vw;
+            font-size: 1.1vw;
+        }
+        .far{
+            font-size: 1.2vw;
+        }
+        .user{
+            font-style: normal;
+            font-size: 1.2vw;
+            position: relative;
+            top: -3%;
+            right: 2%;
+            display: block;
+        }
+        .user2{
+            font-style: normal;
+            font-size: 1vw;
+            position: relative;
+            top: -3%;
+            right: 2%;
+        }
+    }
+}
+
+
+.navOpen{
+    text-align: center;
+    transition: 0.5s ease all;
+    height: 0vh;
+    opacity: 0;
+    .innerOpenN{
+        padding-left: 2.2vw;
+        a{
+            margin-right: 1.5vw;
+            color: black;
+        }
+    }
+}
+
+.navOpenMove{
+    height: 5vh;
+    opacity: 1.0;
+}
+
+.openNav{
+    width: 0vw; 
+    opacity: 0;
+    position: fixed;
+}
+
+
+@media (min-width:300px) and (max-width:500px){
+    .navOpen{
+        display: none;
+    }
+    .header{
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+    
+
+    .nav{
+        display: flex;
+        padding: 1.5vh 3vw 1vh 3vw;
+        .icons{
+           width: 25%;
+           display: flex;
+           padding: 1.7vh 0.5vw 0vh 7.5vw;
+          .fas,.far{font-size: 5vw; margin-right: 4vw;} 
+          .fa-search{padding-top: 0.15vh;}
+          .fa-user{display: none;} 
+          .far{font-size: 5.5vw;
+            padding-top: 0vh;
+            left: 85%;
+            position: relative;}
+          .user{
+            display: none;
+          }
+
+          .user2{
+              display: none;
+          }
+        }
+        .logo{
+            width: 50%;
+            text-align: center;
+            font-size: 5.5vw;
+            padding-top: 0.5vh;
+        }
+        .menu{
+            width: 25%;
+            padding: 1.3vh 0vw 1vh 3vw;
+            .menuIcon .menuBurger {
+                margin: auto;
+                width: 4.7vw;
+                height: 0.28vw;
+                border-radius: 2px;
+                background-color: black;
+                transition: all .5s ease-in-out;
+            }
+            .menuIcon .menuBurger::before {
+                transform: translateY(1.35vw);
+                content: '';
+                position: absolute;
+                width: 4.2vw;
+                height: 0.28vw;
+                background-color: black;
+                border-radius: 2px;
+                transition: all .5s ease-in-out;
+            }
+            .menuIcon .menuBurger::after {
+                transform: translateY(2.7vw);
+                content: '';
+                position: absolute;
+                width: 3.2vw;
+                height: 0.28vw;
+                background-color: black;
+                border-radius: 5px;
+                transition: all .5s ease-in-out;
+            }
+
+            .userMobile{
+                display: block;
+                position: relative;
+                left: 36%;
+                top: -17%;
+                font-style: normal;
+                font-size: 3.5vw;
+            }
+        }
+    }
+
+    
+
+    .openNav{
+        height: 100vh;width: 0vw; transform: translateX(-325px);
+        opacity: 1.0;
+        position: fixed;z-index: 100;top: 9vh;left: 0vw;
+        margin-top: -9vh;  padding: 2.8vh 0.8vw 0vh 0.8vw;
+        transition: 0.8s ease all;
+        background-color: white;
+        p{
+            text-align: left;
+            margin: 0;
+            width: 92%;
+            margin-left: 3.5vw;
+            padding: 0vh 0vw 2vh 1.5vw;
+            font-size: 6vw;
+            border-bottom: rgba(156, 156, 156, 0.219) 0.23px solid;
+        }
+        a
+        {
+        display: block;margin: 1.8vh 3.5vw 1.8vh 4vw;
+        padding-bottom: 1.5vh;
+        color: black;font-size: 4.1vw;
+        border-bottom: rgba(156, 156, 156, 0.219) 0.23px solid;
+        }
+        .innerOpenN{
+           text-align: left;
+        //    hr{
+        //     border: rgb(156, 156, 156) 0.8px solid; width: 90%;
+        //     margin: 0vh 0vw 0vh 2vh;
+        //    }
+        }
+
+
+        .register{
+            border-top: rgba(156, 156, 156, 0.219) 0.8px solid;
+            position: relative;
+            transform: translateY(47px);
+            opacity: 0;
+            animation: remainRegister 0.5s ease forwards;
+            top: 54vh;
+            font-size: 3.8vw;
+            padding-top: 0vh;
+            padding-left: 5vw;
+            .title{
+                margin-left: 1.3vw;
+                font-size: 4vw;
+            }
+        }
+        
+    }
+
+    @keyframes register {
+        0%{
+            transform: translateY(47px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0px);
+            opacity: 1.0;
+        }
+    }
+
+    @keyframes remainRegister {
+        0%{
+            transform: translateY(0px);
+            opacity: 1.0;
+        }
+        100%{
+            transform: translateY(0px);
+            opacity: 1.0;
+        }
+    }
+
+    .moveNav{
+        width: 90vw;
+        opacity: 1.0;
+        transform: translateX(0px);
+        .register{
+            animation: register 0.5s ease forwards;
+            animation-delay: 0.5s;
+        }
+    }
+    .moveNavApp{
+        opacity:1.0;
+        background:rgb(107, 106, 106);
+        transition:0.5s all ease;
+        img{
+            opacity: 0.3;
+        }
+        input{
+            opacity: 0.3;
+        }
+    }
+}

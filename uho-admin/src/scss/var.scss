@@ -1,0 +1,38 @@
+$color1:#AE7D0D;
+$color2:#C3B8A6;
+$color3:#F7F2EB;
+
+$hover2:#b6a58a;
+$hover3:#d4d1cc;
+
+%menuBurger{
+    transform: translateY(2px) translateX(1.5px) rotate(90deg);
+}
+
+.title{
+    text-align: center;
+    font-size: 0.9vw;
+    margin-top: 6vh;
+    margin-right: 0.5vw;
+    .first{
+        font-size: 0.8vw;
+        // text-transform: uppercase;
+        color: rgb(206, 138, 138);
+    }
+    .second{
+        text-transform: uppercase;
+        color: rgb(206, 138, 138);
+    }
+    .third{
+        text-transform: uppercase;
+    }
+}
+
+
+.big{
+    margin: 2vh 0vw;
+    font-size: 2vw;
+    text-transform: uppercase;
+    margin-right: 0.2vw;
+    text-align: center;
+}

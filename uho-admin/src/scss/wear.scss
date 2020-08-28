@@ -1,0 +1,411 @@
+@import './var.scss';
+.btnUpdate{ 
+    position: relative;left: 0%;
+    width: 18.2vw;height: 6.35vh;margin-top: 3vh;
+    border-radius: 4px;border: none;
+    font-size: 0.9vw;letter-spacing: 0.05vw;
+    transition: 0.3s ease all;
+    background-color: $color3;
+}
+.btnUpdate:hover{
+    background-color: $hover2;
+}
+
+.big{
+    margin: 2vh 0vw;
+    font-size: 2vw;
+    margin-right: 0.2vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.wearOne{
+    margin: 6vh 0vw 8vh 9.5vw;
+    display: flex;
+    .innerWearOne{
+        margin-bottom: 25vh;
+        
+        width: 50%;
+        height: 50vh;    
+        text-align: center;
+        
+            img{
+                width: 20vw;
+                height: 100%;
+                object-fit: cover;
+            }
+        
+
+        .small{
+            font-size: 0.8vw;
+            margin-top: 2.2vh;
+            font-weight: 300;
+        }
+        .name{
+            text-align: center;
+            margin-top: 1vh;
+            font-size: 1.11vw;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 0.05vw;
+        }
+
+        .price{
+            margin-top: 1.1vh;
+            font-size: 1.1vw;
+            font-weight: 300;
+        }
+    }
+    .update{
+        width: 50%;
+    }   
+}
+.mobileItem{
+    display: none;
+}
+
+.container-fluid{
+    margin-top: -1.5vh;
+    padding: 3vh 3.85vw 1vh 3.85vw;
+    .table{
+        font-size: 1vw;
+        thead{
+                th{
+                    border-top: none;
+                    border-bottom: 0.5px solid $color1;
+                    font-size: 0.73vw;
+                    font-weight: 400;
+                }
+                
+                .productOrder{
+                    width: 40%;
+                    padding-bottom: 2.9vh;
+                    text-align: left;
+                    span{
+                        position: relative;
+                    right:1.5%;
+                    }
+                }
+                .priceOrder{
+                    width:8% ;
+                    text-align: center;
+                    padding-bottom: 2.9vh;
+                    span{
+                        position: relative;
+                        right: 11.5%;
+                        padding-left: 1vw;
+                    }
+                }
+                .numOrder{
+                    width: 8%;
+                    text-align: center;
+                    padding-bottom: 2.9vh;
+                    span{
+                        position: relative;
+                        right: 11.5%;
+                    }
+                }
+                .sizeOrder{
+                    width: 7%;
+                    text-align: center;
+                    padding-bottom: 2.9vh;
+                    span{
+                        position: relative;
+                        right: 11.5%;
+                    }
+                }
+                .quantityOrder{
+                    padding-left: 2.5vw;
+                    width: 13%;
+                    padding-bottom: 2.9vh;
+                    span{
+                        position: relative;
+                        left: 3.15%;
+                    }
+                }
+                .totalOrder{
+                    width: 5%;
+                    padding-bottom: 2.9vh;
+                    text-align: right;
+                    span{
+                        position: relative;
+                        left: 15.5%;
+                    }
+                }
+                
+            }
+
+
+        tbody{
+            tr:hover{
+                background-color: transparent;
+            }
+            tr{
+                border-bottom: 0.5px solid $color1;
+                .item{
+                    padding-top: 3vh;
+                    padding-bottom: 3vh;
+                    .theItem{
+                        display: flex;
+                        padding-left: 0vw;
+                        .far{
+                            width: 3%;
+                        }
+                        .img{
+                            width: 14%;
+                            img{
+                                width: 6.2vw;
+                            }
+                        }
+                        .details{
+                            width: 80%;
+                            padding-left: 2vw;
+                            display: block;
+                            p{
+                                font-size: 0.85vw;
+                                margin-bottom: 0.2vw;
+                                font-weight: 400;
+                            }
+                            
+                            p:nth-child(2){
+                                font-size: 1.2vw;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+
+                .itemUser{
+                    position: relative;
+                    right: 0%;
+                    padding-left: 0vw;
+                    font-size: 1vw;
+                    padding-top: 9.3vh;
+                    top: 0vh;
+                }
+                .itemSize{
+                    padding-left: 2vw;
+                    /* top: 0vw; */
+                    padding-top: 4.5vw;
+                }
+                .itemPrice{
+                    padding-top: 4.4vw;
+                }
+                .quantity{
+                    .stuff{
+                        display: flex;
+                        .count{
+                            position: relative;
+                            top: 6vh;
+                            left: 37%;
+                            font-size: 1vw;
+                        }
+                        .addItem{
+                            position: relative;
+                            top: 6.9vh;
+                            left: 11%;
+                            margin-left: 1vw;
+                            border-radius: 5px;
+                            width: 4.8vw;
+                            height: 2.3vw;
+                            border: 0.5px solid #AE7D0D;
+                            display: flex;
+                            .minus{
+                                cursor: pointer;
+                                border-right: 0.5px $color1 solid;
+                                .innerMinus{
+                                    font-size: 3.8vw;
+                                    font-weight: 100;
+                                    position: relative;
+                                    left: 22%;
+                                    top: -4.1vh;                                
+                                }
+                            }
+                            .plus{
+                                cursor: pointer;
+                                .innerPlus{
+                                    position: relative;
+                                    left: 20%;
+                                    font-size: 2.5vw;
+                                    top: -2.1vh;
+                                }
+                            }
+                            span{
+                                width: 50%;
+                                font-weight: 100;
+                                font-size: 2.8vw;
+                               
+                            }
+                        }
+                    }
+                }
+
+                .total{
+                    padding: 0;
+                    position: relative;
+                    padding-top: 9.1vh;
+                    font-size: 1vw;
+                    top: 0;
+                    padding-left: 0.8vw;
+                }
+            }
+            
+        }   
+    }
+}
+
+
+@media (min-width:300px) and (max-width:500px){
+    .title{
+        text-align: center;
+        font-size: 3.5vw;
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+        margin-right: 0vw;
+        .first{
+            font-size: 3.5vw;
+        }
+    }
+
+    .big{
+        font-size: 6vw;
+    }
+    .container-fluid{
+        display: none;
+    }
+    .mobileItem{
+        display: block;
+        .theItem{
+            border: 0.5px $color1 solid;
+            border-radius: 5px;
+            text-align: center;
+            .innerItem{
+                .details{
+                    margin-top: 2vh;
+                    margin-bottom: 2vh;
+                    p{
+                        font-size: 3.5vw;
+                        margin-bottom: 0.5vh;
+                    }
+                    p:nth-child(2){
+                        font-size: 4.5vw;
+                    }
+                }
+            }
+            .price{
+                border-top: 0.5px solid $color1;
+                font-size: 4vw;
+                padding: 1.8vh 0vw;
+            }
+
+            .flexOne{
+                border-top: 0.5px solid $color1;
+                display: flex;
+                .quantity{
+                    width: 50%;
+                    display: flex;
+                    padding: 2vh 0vw 4vh 0vw;
+                    .num{
+                        position: relative;
+                        top: 1.5vh;
+                        word-spacing: 3vw;
+                        left: 24%;
+                    }
+                    .addItem{
+                        position: relative;
+                        top: 1.3vh;
+                        left: 38%;
+                        margin-left: 1vw;
+                        border-radius: 5px;
+                        width: 21vw;
+                        height: 9.4vw;
+                        border: 0.5px solid #AE7D0D;
+                        display: flex;
+                        .minus{
+                            border-right: 0.5px $color1 solid;
+                            .innerMinus{
+                                font-size: 17vw;
+                                font-weight: 100;
+                                position: relative;
+                                left: 4%;
+                                top: -5.2vh;                               
+                            }
+                        }
+                        .plus{
+                            .innerPlus{                         
+                                position: relative;
+                                left: 3%;
+                                font-size: 10.5vw;
+                                top: -1.85vh;
+                            }
+                        }
+                        span{
+                            width: 50%;
+                            font-weight: 100;
+                            font-size: 2.8vw;
+                           
+                        }
+                    }
+                }
+                .total{
+                    font-size: 4vw;
+                    padding: 4vh 0vw 0vh 0vw;
+                    border-left: 0.5px solid $color1;
+                    width: 50%;
+                }
+            }
+        }
+        
+    }
+    .wearOne{
+        margin: 6vh 0vw 8vh 0vw;
+        display: block;
+        text-align: center;
+        .innerWearOne{
+            margin-bottom: 22vh;
+            width: 100%; 
+                img{
+                    width: 75vw;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            
+            .small{
+                font-size: 5vw;
+                margin-top: 2.2vh;
+                font-weight: 300;
+            }
+            .name{
+                text-align: center;
+                margin-top: 1vh;
+                font-size: 6.11vw;
+                text-transform: uppercase;
+                font-weight: 400;
+                letter-spacing: 0.05vw;
+            }
+    
+            .price{
+                margin-top: 1.1vh;
+                font-size: 1.1vw;
+                font-weight: 300;
+            }
+        }
+        .update{
+            width: 100%;
+            #file{
+                position: relative;
+                left: 14%;
+            }
+        }
+        .btnUpdate{ 
+            position: relative;left: 0%;
+            width: 35.2vw;height: 6.35vh;margin-top: 5vh;
+            border-radius: 4px;border: none;
+            font-size: 3.9vw;letter-spacing: 0.05vw;
+            transition: 0.3s ease all;
+            background-color: $hover2;
+        }
+    }
+    
+}

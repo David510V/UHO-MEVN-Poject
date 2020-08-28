@@ -1,0 +1,242 @@
+@import './var.scss';
+
+.title{
+    text-align: center;
+    font-size: 0.9vw;
+    margin-top: 6vh;
+    margin-right: 0.5vw;
+    .first{
+        font-size: 0.8vw;
+        // text-transform: uppercase;
+        color: rgb(206, 138, 138);
+    }
+    .second{
+        text-transform: uppercase;
+        color: rgb(206, 138, 138);
+    }
+    .third{
+        text-transform: uppercase;
+    }
+}
+
+.small{
+    text-align: center;
+}
+.wearOne{
+    margin: 6vh 0vw 8vh 9.5vw;
+    display: flex;
+    .innerWearOne{
+        margin-bottom: 25vh;
+        
+        width: 46%;
+        height: 50vh;    
+        text-align: center;
+        
+            img{
+                width: 20vw;
+                height: 100%;
+                object-fit: cover;
+            }
+        
+
+        .small{
+            font-size: 0.8vw;
+            margin-top: 2.2vh;
+            font-weight: 300;
+        }
+        .name{
+            text-align: center;
+            margin-top: 1vh;
+            font-size: 1.11vw;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 0.05vw;
+        }
+
+        .price{
+            margin-top: 1.1vh;
+            font-size: 1.1vw;
+            font-weight: 300;
+        }
+    }
+    .update{
+        width: 50%;
+        .inputUpdate{
+            cursor: pointer;
+            border: #AE7D0D solid 0.5px;
+            border-radius: 3px;
+            height: 5.5vh;
+            width: 18.8vw;
+            background-color: $color2;
+        }
+        
+        .form-control{
+            cursor: pointer;
+            border: #AE7D0D solid 0.5px;
+            border-radius: 3px;
+            height: 5.5vh;
+            width: 18.8vw;
+            background-color: $color2;
+        }
+    }   
+}
+.thing{
+    margin: 5vh 0vw 2vh 19vw;
+    img{
+        width: 62vw;
+        object-fit: cover;
+    }
+
+    .order{
+        border-top: #AE7D0D solid 0.5px;
+        width: 76.5%;
+        margin: 5vh 0vw 0vh 0vw;
+        padding: 5vh 0vw;
+        text-align: center;
+        .sizeOrder{
+            display: flex;
+            width: 60%;
+            margin: auto;
+            margin-right: 13vw;
+            
+            .first{
+                width: 50%;
+                margin-right: 1.8vw;
+                input{
+                    width: 17vw;
+                }
+                p{
+                    margin-right: 15vw;
+                    font-weight: bold;
+                }
+            }
+            .second{
+                width: 50%;
+                input{
+                    width: 17vw;
+                }
+                p{
+                    margin-right: 15vw;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .price{
+            font-size: 1.15vw;
+            margin: 5vh 0vw;
+            font-weight: 300;
+        }
+        
+        .addBuy{
+            margin: auto;
+            margin-left: 1vw;
+            .oneBtn{
+                margin-right: 0.8vw;
+                background-color: $color3;
+                border: $color1 solid 0.5px;
+            }
+            
+            .oneBtn:hover{
+                background-color: $hover3;
+            }
+            
+            button{ 
+                width: 18.2vw;
+                height: 6.35vh;
+                border-radius: 4px;
+                border: none;
+                font-size: 0.9vw;
+                letter-spacing: 0.05vw;
+                transition: 0.3s ease all;
+                background-color: $color2;
+            }
+            button:hover{
+                background-color: $hover2;
+            }
+        }
+    }
+
+    .thanks{
+        font-size: 2vw;
+        padding-left: 21vw;
+    }
+    
+}
+
+
+@media (min-width:300px) and (max-width:500px){
+    .title{
+        text-align: center;
+        font-size: 3.5vw;
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+        margin-right: 0vw;
+        .first{
+            font-size: 3.5vw;
+        }
+    }
+
+    .big{
+        font-size: 6vw;
+    }
+
+    .wearOne{
+        margin: 6vh 0vw 8vh 0vw;
+        display: block;
+        text-align: center;
+        .innerWearOne{
+            margin-bottom: 22vh;
+            width: 100%; 
+                img{
+                    width: 75vw;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            
+            .small{
+                font-size: 5vw;
+                margin-top: 2.2vh;
+                font-weight: 300;
+            }
+            .name{
+                text-align: center;
+                margin-top: 1vh;
+                font-size: 6.11vw;
+                text-transform: uppercase;
+                font-weight: 400;
+                letter-spacing: 0.05vw;
+            }
+    
+            .price{
+                margin-top: 1.1vh;
+                font-size: 1.1vw;
+                font-weight: 300;
+            }
+        }
+        .update{
+            width: 100%;
+            .inputUpdate{
+                width:60.8vw;
+            }
+            .form-control{
+                position: relative;
+                left: 20%;
+                width: 60.8vw;
+            }
+            #file{
+                position: relative;
+                left: 14%;
+            }
+        }
+        .btnUpdate{ 
+            position: relative;left: 0%;
+            width: 35.2vw;height: 6.35vh;margin-top: 5vh;
+            border-radius: 4px;border: none;
+            font-size: 3.9vw;letter-spacing: 0.05vw;
+            transition: 0.3s ease all;
+            background-color: $hover2;
+        }
+    }
+
+}
