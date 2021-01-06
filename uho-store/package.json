@@ -9,7 +9,7 @@
     "test:e2e": "vue-cli-service test:e2e"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "base64-img": "^1.0.4",
     "chai": "^4.2.0",
     "chai-spies": "^1.0.0",
