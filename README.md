@@ -29,6 +29,3 @@ The project had several goals:
 * Mongoose.
 * Unit Testing: Jest.
 
-[UHO-Store](https://uho-store.netlify.app/) | [UHO-Admin](https://uho-admin.netlify.app/)
-
-Admin Email: rt562@walla.com , Admin Password: gogo9090
